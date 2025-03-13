@@ -1,0 +1,21 @@
+{
+  "name": "@nextjs-portfolio/api",
+  "version": "0.0.1",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": ["dist/**"],
+  "license": "MIT",
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts",
+    "dev": "tsup src/index.ts --format cjs,esm --dts --watch",
+    "lint": "eslint src/**/*.ts*"
+  },
+  "dependencies": {
+    "graphql": "^16.8.0",
+    "graphql-request": "^6.1.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.1.6",
+    "tsup": "^7.1.0"
+  }
+}
