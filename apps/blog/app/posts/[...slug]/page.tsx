@@ -1,8 +1,8 @@
 import 'css/prism.css'
 import 'katex/dist/katex.css'
 
-import PageTitle from '@/components/PageTitle'
-import { components } from '@/components/MDXComponents'
+import PageTitle from '@/components/origin/PageTitle'
+import { components } from '@/components/origin/MDXComponents'
 import { MDXLayoutRenderer } from 'pliny/mdx-components'
 import { sortPosts, coreContent, allCoreContent } from 'pliny/utils/contentlayer'
 import { allPosts, allAuthors } from 'contentlayer/generated'

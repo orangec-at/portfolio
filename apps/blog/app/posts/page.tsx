@@ -1,9 +1,9 @@
 import { allCoreContent, sortPosts } from 'pliny/utils/contentlayer'
 import { allPosts } from 'contentlayer/generated'
 import { genPageMetadata } from 'app/seo'
-import ListLayout from '@/layouts/ListLayoutWithTags'
+import TossStyleLayout from '@/layouts/TossStyleLayout'
 
-const POSTS_PER_PAGE = 5
+const POSTS_PER_PAGE = 8
 
 export const metadata = genPageMetadata({ title: 'Blog' })
 
@@ -18,7 +18,7 @@ export default async function BlogPage(props: { searchParams: Promise<{ page: st
   }
 
   return (
-    <ListLayout
+    <TossStyleLayout
       posts={posts}
       initialDisplayPosts={initialDisplayPosts}
       pagination={pagination}

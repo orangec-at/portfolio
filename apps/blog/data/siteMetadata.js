@@ -3,20 +3,20 @@ const siteMetadata = {
   title: 'Make it Orange',
   author: 'Jaeil Lee',
   headerTitle: 'Make it Orange',
-  description: 'A blog created with Next.js and Tailwind.css',
-  language: 'en-us',
+  description: 'A blog of Jaeil Lee, a product maker.',
+  language: ['en-us', 'ko-kr'],
   theme: 'system', // system, dark or light
-  siteUrl: 'https://tailwind-nextjs-starter-blog.vercel.app',
+  siteUrl: 'https://orangec-at.vercel.app',
   siteRepo: 'https://github.com/orangec-at/portfolio',
   siteLogo: `${process.env.BASE_PATH || ''}/static/images/logo.png`,
   socialBanner: `${process.env.BASE_PATH || ''}/static/images/twitter-card.png`,
   email: 'radio941016@gmail.com',
-  github: 'https://github.com',
+  github: 'https://github.com/orangec-at',
   x: 'https://x.com/x_orangec_at',
   linkedin: 'https://www.linkedin.com/in/orangec-at/',
   locale: 'en-US',
   // set to true if you want a navbar fixed to the top
-  stickyNav: false,
+  stickyNav: true,
   analytics: {
     // If you want to use an analytics provider you have to add it to the
     // content security policy in the `next.config.js` file.
@@ -44,7 +44,7 @@ const siteMetadata = {
   newsletter: {
     // supports mailchimp, buttondown, convertkit, klaviyo, revue, emailoctopus, beehive
     // Please add your .env file and modify it according to your selection
-    provider: 'buttondown',
+    provider: 'convertkit',
   },
   comments: {
     // If you want to use an analytics provider you have to add it to the

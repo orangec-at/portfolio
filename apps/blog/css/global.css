@@ -1,0 +1,45 @@
+/* global.css 파일에 추가할 전역 스크롤바 스타일 */
+
+:root {
+  --scrollbar-width: 4px;
+  --scrollbar-track-color: rgba(0, 0, 0, 0.05);
+  --scrollbar-thumb-color: rgba(0, 0, 0, 0.2);
+  --scrollbar-thumb-hover-color: rgba(0, 0, 0, 0.3);
+  --vh: 1vh; /* 모바일 vh 수정용 변수 유지 */
+}
+
+/* 웹킷 기반 브라우저용 전역 스크롤바 스타일 (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+  width: var(--scrollbar-width);
+  height: var(--scrollbar-width);
+}
+
+::-webkit-scrollbar-track {
+  background: var(--scrollbar-track-color);
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb-color);
+  border-radius: 8px;
+  transition: background 0.2s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--scrollbar-thumb-hover-color);
+}
+
+/* Firefox용 전역 스크롤바 스타일 */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--scrollbar-thumb-color) var(--scrollbar-track-color);
+}
+
+/* 다크 모드에서의 스크롤바 색상 변경 (옵션) */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --scrollbar-track-color: rgba(50, 50, 50, 0.8);
+    --scrollbar-thumb-color: rgba(100, 100, 100, 0.8);
+    --scrollbar-thumb-hover-color: rgba(120, 120, 120, 0.9);
+  }
+}

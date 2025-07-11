@@ -1,0 +1,36 @@
+[
+  {
+    "id": "1",
+    "content": "Just discovered this amazing new React pattern. The composition approach really makes components more reusable! 🚀",
+    "timestamp": "2025-06-21T10:30:00Z",
+    "type": "thought",
+    "tags": ["react", "development"]
+  },
+  {
+    "id": "2",
+    "content": "Working on my portfolio redesign. Sometimes the simplest solutions are the most elegant.",
+    "timestamp": "2025-06-20T15:45:00Z",
+    "type": "thought",
+    "tags": ["design", "portfolio"]
+  },
+  {
+    "id": "3",
+    "content": "https://github.com/vercel/next.js/releases/tag/v15.0.0",
+    "link": {
+      "url": "https://github.com/vercel/next.js/releases/tag/v15.0.0",
+      "title": "Next.js 15 Release",
+      "description": "Major performance improvements and new features"
+    },
+    "comment": "Next.js 15 is out! The React 19 support and improved caching look promising.",
+    "timestamp": "2025-06-19T09:15:00Z",
+    "type": "link",
+    "tags": ["nextjs", "react"]
+  },
+  {
+    "id": "4",
+    "content": "Coffee ☕ + Code 💻 + Good music 🎵 = Perfect morning",
+    "timestamp": "2025-06-18T08:00:00Z",
+    "type": "thought",
+    "tags": ["lifestyle", "coding"]
+  }
+]
